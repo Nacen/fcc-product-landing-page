@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#header .header-img-div {
+  padding-left: 20px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .header-img-div #company-name {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+#header .header-img-div #header-img {
+  width: 48px;
+}
+
+#header #nav-bar {
+  width: 50%;
+}
+
+#header #nav-bar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0;
+}
+
+#header #nav-bar ul .nav-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#newsletter {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(201, 216, 198, 0.8)), to(rgba(121, 126, 123, 0.8))), url("./gym-view-javier-santos-guzman-9MR78HGoflw-unsplash.jpg");
+  background-image: linear-gradient(to right bottom, rgba(201, 216, 198, 0.8), rgba(121, 126, 123, 0.8)), url("./gym-view-javier-santos-guzman-9MR78HGoflw-unsplash.jpg");
+  background-size: cover;
+}
+
+#newsletter .hero {
+  margin: 0 10%;
+}
+
+#newsletter .hero-heading {
+  font-size: 48px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+#newsletter .newsletter-description {
+  font-size: 22px;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+#newsletter #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#newsletter #form #email {
+  padding: 16px;
+}
+
+#newsletter #form #submit {
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #bf4c41;
+  color: #f7f7f7;
+}
+
+#features {
+  margin: 5% 0;
+  padding: 0 10%;
+}
+
+#features h2 {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+#features .features-container {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#features .features-container .feature {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30% 70%;
+      grid-template-rows: 30% 70%;
+  -ms-grid-columns: 25% 75%;
+      grid-template-columns: 25% 75%;
+  grid-gap: 10px;
+}
+
+#features .features-container .feature .feature-img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  width: 60px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#features .features-container .feature .feature-title {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  font-size: 28px;
+}
+
+#features .features-container .feature .feature-description {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+#workouts-demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5% 0;
+}
+
+#workouts-demo .workouts-demo-title {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+#pricing {
+  background-color: #bf4c41;
+  padding: 10% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  border-radius: 5px;
+  width: 27%;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .card-title {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.card h4 {
+  margin: 0;
+  text-align: center;
+}
+
+.card h4 .price {
+  font-size: 36px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  padding: 5px 0;
+}
+
+.card .purchase-button {
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #12592b;
+  color: #f7f7f7;
+  margin-top: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  #pricing {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #pricing .card-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #pricing .card-container .card {
+    height: auto;
+    width: calc(100% - 20px);
+    margin: 20px;
+  }
+  #pricing .card-container .purchase-button {
+    margin: 10px 0;
+  }
+  #pricing .card-container ul {
+    text-align: center;
+  }
+  #pricing .card-container ul li {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

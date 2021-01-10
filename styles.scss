@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  .header-img-div {
+    padding-left: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    #company-name {
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+    }
+
+    #header-img {
+      width: 48px;
+    }
+  }
+  #nav-bar {
+    width: 50%;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0;
+
+      .nav-link {
+        color: inherit;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+#newsletter {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(201, 216, 198, 0.8),
+      rgba(121, 126, 123, 0.8)
+    ),
+    url("./gym-view-javier-santos-guzman-9MR78HGoflw-unsplash.jpg");
+  background-size: cover;
+  .hero {
+    margin: 0 10%;
+  }
+
+  .hero-heading {
+    font-size: 48px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #f7f7f7;
+  }
+
+  .newsletter-description {
+    font-size: 22px;
+    text-align: center;
+    color: #f7f7f7;
+
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-evenly;
+    #email {
+      padding: 16px;
+    }
+    #submit {
+      padding: 16px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: #bf4c41;
+      color: #f7f7f7;
+    }
+  }
+}
+
+#features {
+ 
+  margin: 5% 0;
+  padding: 0 10%;
+  h2 {
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  .features-container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    .feature {
+      display: grid;
+      grid-template-rows: 30% 70%;
+      grid-template-columns: 25% 75%;
+      grid-gap: 10px;
+
+      .feature-img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        width: 60px;
+        justify-self: center;
+        align-self: center;
+      }
+
+      .feature-title {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        font-size: 28px;
+      }
+
+      .feature-description {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+      }
+    }
+  }
+}
+
+#workouts-demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0;
+  
+
+  .workouts-demo-title {
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+#pricing {
+  background-color: #bf4c41;
+  padding: 10% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  border-radius: 5px;
+  width: 27%;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+
+  .card-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  h4 {
+    margin: 0;
+    text-align: center;
+    .price {
+      font-size: 36px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      padding: 5px 0;
+    }
+  }
+
+  .purchase-button {
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    background-color: #12592b;
+    color: #f7f7f7;
+    margin-top: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #pricing {
+    justify-content: center;
+    align-items: center;
+    .card-container {
+      width: 100%;
+      flex-direction: column;
+      .card {
+        height: auto;
+        width: calc(100% - 20px);
+        margin: 20px;
+      }
+      .purchase-button {
+        margin: 10px 0;
+      }
+      ul {
+        text-align: center;
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
